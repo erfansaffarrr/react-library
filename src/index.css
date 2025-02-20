@@ -1,0 +1,262 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #000000;
+  text-decoration: inherit;
+  font-family: "Poppins", sans-serif;
+  font-size: x-large;
+}
+a:hover {
+  color: orangered;
+}
+
+body {
+  margin: 0;
+  direction: rtl;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: orangered;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+/* کد های من */
+ /* استایل صفحه اصلی */
+.home-container {
+  text-align: center;
+  padding: 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('https://source.unsplash.com/1600x900/?library,books') no-repeat center center;
+  background-size: cover;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* استایل عنوان */
+.home-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+/* استایل متن توضیحی */
+.home-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.Navbar {
+  width: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  display: flex;
+  background-color: rgb(249, 130, 87);
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* ارور 404  */
+.Notfound {
+  text-align: center;
+  padding-top: 200px;
+}
+.Notfound2 {
+  text-align: center;
+  font-size: xx-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.Notfound2 :hover {
+  cursor: pointer;
+  color: lightcoral;
+}
+
+ /* لیست کتاب ها */
+/* استایل کلی صفحه */
+.books-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background: url('https://source.unsplash.com/1600x900/?library,books') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.search-input {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid lightcoral;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+  background: rgba(255, 255, 255, 0.8);
+  font-family: "Poppins", sans-serif;
+}
+
+.search-input:focus {
+  border-color: #d84d03;
+  box-shadow: 0px 0px 8px red;
+}
+
+/* استایل چارت کتاب‌ها */
+.book-list {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  */
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  padding: 0;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* استایل هر کتاب */
+.book-item {
+  background: lightgray;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px gray;
+  transition: 0.3s;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.book-item:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  background: lightcoral;
+  color: white;
+}
+
+/* استایل لینک‌های کتاب */
+.book-link {
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 18px;
+}
+
+.book-link:hover {
+  color: gray;
+}
+
+ /* اطلاعات کتاب ها */
+
+
+.Book-info {
+  text-align: center;
+  padding-top: 5px;
+  color: lightcoral;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: x-large;
+}
+
+.found-book{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: xx-large;
+  color: lightcoral;
+}
+
+/* دکمه حذف کتاب  */
+
+.delete-book{
+  width: 200px;
+  height: 70px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 60px;
+  border: solid lightcoral 3px;
+  margin-left: 20px;
+}
+.delete-book:hover{
+  border: solid black;
+  background-color: lightcoral;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all ease 2s;
+}
+
+/* درباره ما */
+
+.about img{
+width: 50%;
+height: 550px;
+}
+.about{
+  display: flex;
+  justify-content: space-around;
+}
+
+.about p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: x-large;
+
+}
